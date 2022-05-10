@@ -1,0 +1,8 @@
+<h1>Lista de alunos</h1>
+{{#each alunos}}
+    ID: {{dataValues.id}}<br>
+    Nome: {{dataValues.aluno_nome}}<br>
+    <a href="/deletar/{{id}}"><button onclick="return window.confirm('Deseja excluir o registro?')">Excluir</button></a>
+    <a href="/edicao/{{aluno_nome}}"><button onclick="return window.confirm('Deseja editar o registro?')">Editar</button></a>
+    <hr>
+{{/each}}
